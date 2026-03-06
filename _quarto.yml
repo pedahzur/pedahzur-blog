@@ -3,12 +3,14 @@ project:
   output-dir: docs
 
 website:
-  description: "Academic blog by Ami Pedahzur"
+  description: "סמינר אקדמי | Academic Seminar — Prof. Ami Pedahzur, University of Haifa"
   site-url: https://pedahzur.github.io/pedahzur-blog
-  title: "Ami Pedahzur"
+  title: "רדיקליזם איסלאמי במזרח התיכון בן זמננו"
   navbar:
+    left:
+      - text: "סילבוס | Syllabus"
+        href: about.qmd
     right:
-      - about.qmd
       - icon: github
         href: https://github.com/pedahzur
 format:

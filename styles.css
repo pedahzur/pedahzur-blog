@@ -1,1 +1,24 @@
-/* css styles */
+/* Hebrew / RTL support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Posts written in Hebrew get RTL automatically via lang="he" */
+:lang(he) {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Navbar title — allow Hebrew to display without overflow */
+.navbar-brand {
+  font-size: 1rem;
+  white-space: normal;
+  max-width: 60%;
+}
+
+/* General readability */
+body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
