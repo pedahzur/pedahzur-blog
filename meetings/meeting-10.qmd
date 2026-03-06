@@ -1,0 +1,35 @@
+---
+title: "מפגש 10: רדיקליזם במרחב הסייבר: תעמולה ורשתות חברתיות"
+subtitle: "רדיקליזם איסלאמי במזרח התיכון בן זמננו"
+page-layout: article
+title-block-banner: true
+---
+
+::: {.rtl}
+
+[← חזרה לדף הבית](../index.qmd) | [סילבוס אינטראקטיבי](../syllabus.html)
+
+---
+
+**תחום דיסציפלינרי:** תקשורת ומידע
+
+## תיאור המפגש
+
+כיצד המרחב הדיגיטלי משנה את אופי הגיוס ותהליכי ההקצנה המהירים.
+
+## קריאות נדרשות
+
+- Gabriel Weimann / *Terror on the Internet: The New Arena, the New Challenges*
+- Maura Conway / *Determining the Role of the Internet in Violent Extremism and Terrorism*
+
+[עבור לביבליוגרפיה המלאה →](../bibliography.qmd#מפגש-10-רדיקליזם-דיגיטלי-וזאבים-בודדים)
+
+## זיקה יישומית
+
+זיהוי מוקדם של התארגנויות ברשת.
+
+---
+
+**מפגשים נוספים:** [1](meeting-01.qmd) | [2](meeting-02.qmd) | [3](meeting-03.qmd) | [4](meeting-04.qmd) | [5](meeting-05.qmd) | [6](meeting-06.qmd) | [7](meeting-07.qmd) | [8](meeting-08.qmd) | [9](meeting-09.qmd) | [11](meeting-11.qmd) | [12](meeting-12.qmd) | [13](meeting-13.qmd)
+
+:::

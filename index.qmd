@@ -1,22 +1,185 @@
 ---
 title: "רדיקליזם איסלאמי במזרח התיכון בן זמננו"
 subtitle: "Islamic Radicalism in the Contemporary Middle East"
-listing:
-  contents: posts
-  feed: true
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
 title-block-banner: true
 ---
 
 ::: {.rtl}
-ברוכים הבאים לאתר הסמינר. כאן תמצאו חומרי קריאה, מצגות, עדכונים שוטפים ומשאבים נוספים לאורך הסמסטר.
-:::
 
-*Welcome to the seminar website. Here you will find reading materials, updates, and resources throughout the semester.*
+## על הקורס
+
+סמינריון זה בוחן את תופעת הרדיקליזם האיסלאמי במזרח התיכון המודרני דרך עדשה רב-תחומית של מדעי החברה. בכל מפגש נשלב ניתוח תיאורטי מתחום אחד — סוציולוגיה, מדע המדינה, פסיכולוגיה, כלכלה ותקשורת — עם לימוד מקרי בוחן מן השטח.
+
+| | |
+|---|---|
+| **מרצה** | פרופ' עמי פדהצור |
+| **מוסד** | אוניברסיטת חיפה — החוג למזרח תיכון |
+| **שנת לימודים** | תשפ"ו |
+| **מספר מפגשים** | 13 |
 
 ---
+
+## דפי הקורס
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### 📋 סילבוס
+תוכנית הסמינריון המלאה עם פירוט כל המפגשים, קריאות נדרשות, וסימולטור תרחישים מבוסס בינה מלאכותית.
+
+[עבור לסילבוס האינטראקטיבי →](syllabus.html){.btn .btn-primary}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 📚 ביבליוגרפיה
+רשימת כלל חומרי הקריאה לסמינריון, מסודרים לפי מפגשים, עם קישורים לגישה דיגיטלית.
+
+[עבור לביבליוגרפיה →](bibliography.qmd){.btn .btn-outline-primary}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 🗓️ מפגשים
+דפים נפרדים לכל אחד מ-13 המפגשים עם פירוט הנושא, הקריאות, והזיקה היישומית.
+
+[עבור לכלל המפגשים →](#מפגשים){.btn .btn-outline-primary}
+:::
+
+:::
+
+---
+
+## מפגשים
+
+:::
+<!-- end rtl -->
+
+```{=html}
+<div dir="rtl" class="meeting-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; margin: 1.5rem 0;">
+
+  <a href="meetings/meeting-01.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 1</span>
+      <span style="font-size:0.7rem; background:#f3e8ff; color:#7e22ce; padding:2px 8px; border-radius:999px;">סוציולוגיה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">מבוא: מושגי יסוד וסוציולוגיה של הדת</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">הגדרות היסוד: דת, פונדמנטליזם, ורדיקליזם אלימות דרך פריזמה סוציולוגית.</p>
+  </a>
+
+  <a href="meetings/meeting-02.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 2</span>
+      <span style="font-size:0.7rem; background:#dbeafe; color:#1e40af; padding:2px 8px; border-radius:999px;">מדע המדינה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">השורשים האידיאולוגיים: מסייד קוטב לאחים המוסלמים</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">התפתחות התיאוריה הפוליטית האיסלאמית המודרנית דרך כתבי סייד קוטב.</p>
+  </a>
+
+  <a href="meetings/meeting-03.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 3</span>
+      <span style="font-size:0.7rem; background:#fce7f3; color:#9d174d; padding:2px 8px; border-radius:999px;">פסיכולוגיה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">פסיכולוגיה של הרדיקליזציה: רמת הפרט</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">מדוע אנשים נורמטיביים מצטרפים לארגוני טרור? מודלים מפסיכולוגיה חברתית.</p>
+  </a>
+
+  <a href="meetings/meeting-04.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 4</span>
+      <span style="font-size:0.7rem; background:#dcfce7; color:#166534; padding:2px 8px; border-radius:999px;">כלכלה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">הכלכלה הפוליטית של הטרור</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">ניתוח 'תעשיית' הרדיקליזם והקשרים בין מצב כלכלי להצטרפות לארגונים.</p>
+  </a>
+
+  <a href="meetings/meeting-05.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 5</span>
+      <span style="font-size:0.7rem; background:#fef9c3; color:#854d0e; padding:2px 8px; border-radius:999px;">סוציולוגיה ארגונית</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">חקר ארגונים: מבנה, היררכיה ורשתות</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">שימוש בתיאוריות ארגוניות להבנת מבנה קבוצות רדיקליות.</p>
+  </a>
+
+  <a href="meetings/meeting-06.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 6</span>
+      <span style="font-size:0.7rem; background:#dbeafe; color:#1e40af; padding:2px 8px; border-radius:999px;">מדע המדינה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">חזבאללה: מדינה בתוך מדינה ופוליטיקה של זהויות</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">ניתוח חזבאללה כמפלגה פוליטית ותנועה חברתית-עדתית בלבנון.</p>
+  </a>
+
+  <a href="meetings/meeting-07.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 7</span>
+      <span style="font-size:0.7rem; background:#f3e8ff; color:#7e22ce; padding:2px 8px; border-radius:999px;">סוציולוגיה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">חמאס: תיאורית התנועות החברתיות (SMT)</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">ניתוח עלייתה של תנועת חמאס תוך שימוש ב-Social Movement Theory.</p>
+  </a>
+
+  <a href="meetings/meeting-08.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 8</span>
+      <span style="font-size:0.7rem; background:#ccfbf1; color:#134e4a; padding:2px 8px; border-radius:999px;">יחסים בינלאומיים</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">אל-קאעידה והגלובליזציה של הג׳יהאד</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">הטרנספורמציה ממאבק מקומי למאבק עולמי.</p>
+  </a>
+
+  <a href="meetings/meeting-09.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 9</span>
+      <span style="font-size:0.7rem; background:#fee2e2; color:#991b1b; padding:2px 8px; border-radius:999px;">סוציולוגיה פוליטית</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">דאעש (ISIS): טריטוריה ואלימות פרפורמטיבית</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">ניתוח מודל בניית המדינה של דאעש והסוציולוגיה של האלימות המוחצנת.</p>
+  </a>
+
+  <a href="meetings/meeting-10.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 10</span>
+      <span style="font-size:0.7rem; background:#e0e7ff; color:#3730a3; padding:2px 8px; border-radius:999px;">תקשורת ומידע</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">רדיקליזם במרחב הסייבר: תעמולה ורשתות חברתיות</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">כיצד המרחב הדיגיטלי משנה את אופי הגיוס ותהליכי ההקצנה.</p>
+  </a>
+
+  <a href="meetings/meeting-11.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 11</span>
+      <span style="font-size:0.7rem; background:#dbeafe; color:#1e40af; padding:2px 8px; border-radius:999px;">מדע המדינה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">התמודדות המדינה: אסטרטגיות סיכול ו-COIN</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">ניתוח ביקורתי של דוקטרינות Counter-Insurgency והדילמות של סיכול ממוקד.</p>
+  </a>
+
+  <a href="meetings/meeting-12.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 12</span>
+      <span style="font-size:0.7rem; background:#fce7f3; color:#9d174d; padding:2px 8px; border-radius:999px;">פסיכולוגיה סוציולוגית</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">דה-רדיקליזציה: תוכניות שיקום ועזיבת ארגונים</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">כיצד אנשים עוזבים ארגוני טרור? מודלים של שיקום וחסמי עזיבה.</p>
+  </a>
+
+  <a href="meetings/meeting-13.html" class="meeting-card" style="display:block; border:1px solid #e2e8f0; border-radius:12px; padding:1.2rem; text-decoration:none; color:inherit; background:#fff; transition: box-shadow 0.2s;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.5rem;">
+      <span style="font-size:0.75rem; color:#64748b;">מפגש 13</span>
+      <span style="font-size:0.7rem; background:#f1f5f9; color:#475569; padding:2px 8px; border-radius:999px;">אינטגרציה</span>
+    </div>
+    <h3 style="font-size:1rem; font-weight:700; margin:0 0 0.4rem;">סיכום הקורס והצגת עבודות</h3>
+    <p style="font-size:0.82rem; color:#64748b; margin:0;">מפגש מסכם והצגת ניתוחים של הסטודנטים.</p>
+  </a>
+
+</div>
+
+<style>
+.meeting-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border-color: #93c5fd !important;
+}
+</style>
+```

@@ -1,0 +1,35 @@
+---
+title: "מפגש 3: פסיכולוגיה של הרדיקליזציה: רמת הפרט"
+subtitle: "רדיקליזם איסלאמי במזרח התיכון בן זמננו"
+page-layout: article
+title-block-banner: true
+---
+
+::: {.rtl}
+
+[← חזרה לדף הבית](../index.qmd) | [סילבוס אינטראקטיבי](../syllabus.html)
+
+---
+
+**תחום דיסציפלינרי:** פסיכולוגיה
+
+## תיאור המפגש
+
+מדוע אנשים נורמטיביים מצטרפים לארגוני טרור? סקירת מודלים מפסיכולוגיה חברתית.
+
+## קריאות נדרשות
+
+- Ariel Merari / *Driven to Death: Psychological and Social Aspects of Suicide Terrorism*
+- Marc Sageman / *Understanding Terror Networks*
+
+[עבור לביבליוגרפיה המלאה →](../bibliography.qmd#מפגש-3-פסיכולוגיה-חברתית-של-הרדיקליזציה)
+
+## זיקה יישומית
+
+הערכת פרופיל יריב ולוחמת תודעה (לוח"מ) מול אוכלוסייה.
+
+---
+
+**מפגשים נוספים:** [1](meeting-01.qmd) | [2](meeting-02.qmd) | [4](meeting-04.qmd) | [5](meeting-05.qmd) | [6](meeting-06.qmd) | [7](meeting-07.qmd) | [8](meeting-08.qmd) | [9](meeting-09.qmd) | [10](meeting-10.qmd) | [11](meeting-11.qmd) | [12](meeting-12.qmd) | [13](meeting-13.qmd)
+
+:::

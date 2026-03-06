@@ -12,6 +12,34 @@ website:
         href: syllabus.html
       - text: "ביבליוגרפיה | Bibliography"
         href: bibliography.qmd
+      - text: "מפגשים | Meetings"
+        menu:
+          - text: "מפגש 1 — סוציולוגיה של הדת"
+            href: meetings/meeting-01.qmd
+          - text: "מפגש 2 — השורשים האידיאולוגיים"
+            href: meetings/meeting-02.qmd
+          - text: "מפגש 3 — פסיכולוגיה של הרדיקליזציה"
+            href: meetings/meeting-03.qmd
+          - text: "מפגש 4 — כלכלה פוליטית של הטרור"
+            href: meetings/meeting-04.qmd
+          - text: "מפגש 5 — חקר ארגונים"
+            href: meetings/meeting-05.qmd
+          - text: "מפגש 6 — חזבאללה"
+            href: meetings/meeting-06.qmd
+          - text: "מפגש 7 — חמאס ו-SMT"
+            href: meetings/meeting-07.qmd
+          - text: "מפגש 8 — אל-קאעידה"
+            href: meetings/meeting-08.qmd
+          - text: "מפגש 9 — דאעש"
+            href: meetings/meeting-09.qmd
+          - text: "מפגש 10 — רדיקליזם דיגיטלי"
+            href: meetings/meeting-10.qmd
+          - text: "מפגש 11 — סיכול ו-COIN"
+            href: meetings/meeting-11.qmd
+          - text: "מפגש 12 — דה-רדיקליזציה"
+            href: meetings/meeting-12.qmd
+          - text: "מפגש 13 — סיכום"
+            href: meetings/meeting-13.qmd
     right:
       - icon: github
         href: https://github.com/pedahzur

@@ -1,0 +1,35 @@
+---
+title: "מפגש 5: חקר ארגונים: מבנה, היררכיה ורשתות"
+subtitle: "רדיקליזם איסלאמי במזרח התיכון בן זמננו"
+page-layout: article
+title-block-banner: true
+---
+
+::: {.rtl}
+
+[← חזרה לדף הבית](../index.qmd) | [סילבוס אינטראקטיבי](../syllabus.html)
+
+---
+
+**תחום דיסציפלינרי:** סוציולוגיה ארגונית
+
+## תיאור המפגש
+
+שימוש בתיאוריות ארגוניות להבנת מבנה של קבוצות רדיקליות — היררכיה מול רשת.
+
+## קריאות נדרשות
+
+- John Arquilla & David Ronfeldt / *Networks and Netwars: The Future of Terror, Crime, and Militancy*
+- Martha Crenshaw / *Theories of Terrorism: Instrumental and Organizational Approaches*
+
+[עבור לביבליוגרפיה המלאה →](../bibliography.qmd#מפגש-5-סוציולוגיה-ארגונית-היררכיה-מול-רשת)
+
+## זיקה יישומית
+
+פגיעה בראשי רשת מול פגיעה בצמתים.
+
+---
+
+**מפגשים נוספים:** [1](meeting-01.qmd) | [2](meeting-02.qmd) | [3](meeting-03.qmd) | [4](meeting-04.qmd) | [6](meeting-06.qmd) | [7](meeting-07.qmd) | [8](meeting-08.qmd) | [9](meeting-09.qmd) | [10](meeting-10.qmd) | [11](meeting-11.qmd) | [12](meeting-12.qmd) | [13](meeting-13.qmd)
+
+:::

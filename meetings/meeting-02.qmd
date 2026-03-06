@@ -1,0 +1,35 @@
+---
+title: "מפגש 2: השורשים האידיאולוגיים: מסייד קוטב לאחים המוסלמים"
+subtitle: "רדיקליזם איסלאמי במזרח התיכון בן זמננו"
+page-layout: article
+title-block-banner: true
+---
+
+::: {.rtl}
+
+[← חזרה לדף הבית](../index.qmd) | [סילבוס אינטראקטיבי](../syllabus.html)
+
+---
+
+**תחום דיסציפלינרי:** מדע המדינה
+
+## תיאור המפגש
+
+נבחן את התפתחות התיאוריה הפוליטית האיסלאמית המודרנית דרך כתבי סייד קוטב.
+
+## קריאות נדרשות
+
+- סייד קוטב / *ציוני דרך* (Ma'alim fi al-Tariq)
+- Gilles Kepel / *The Prophet and Pharaoh: Muslim Extremism in Egypt*
+
+[עבור לביבליוגרפיה המלאה →](../bibliography.qmd#מפגש-2-מדע-המדינה-האידיאולוגיה-של-המהפכה)
+
+## זיקה יישומית
+
+ניתוח מסמכי שלל להבנת יעדים אסטרטגיים.
+
+---
+
+**מפגשים נוספים:** [1](meeting-01.qmd) | [3](meeting-03.qmd) | [4](meeting-04.qmd) | [5](meeting-05.qmd) | [6](meeting-06.qmd) | [7](meeting-07.qmd) | [8](meeting-08.qmd) | [9](meeting-09.qmd) | [10](meeting-10.qmd) | [11](meeting-11.qmd) | [12](meeting-12.qmd) | [13](meeting-13.qmd)
+
+:::
