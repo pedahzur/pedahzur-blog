@@ -9,7 +9,7 @@ website:
   navbar:
     left:
       - text: "סילבוס | Syllabus"
-        href: about.qmd
+        href: syllabus.html
     right:
       - icon: github
         href: https://github.com/pedahzur
