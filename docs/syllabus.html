@@ -33,26 +33,10 @@
             }
         }
     </script>
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             background-color: #f8fafc;
             color: #0f172a;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 350px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
         }
         .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
@@ -106,72 +90,91 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex flex-col lg:flex-row gap-8">
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex flex-col lg:flex-row gap-6">
 
-        <!-- Right Column (Syllabus Explorer) -->
-        <section class="lg:w-2/3 flex flex-col bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <!-- Syllabus Explorer (wider) -->
+        <section class="lg:w-3/5 flex flex-col bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
             <div class="p-6 border-b border-slate-200 bg-slate-50">
-                <h2 class="text-xl font-bold text-slate-800 mb-2">תוכנית הסמינריון (13 מפגשים)</h2>
-                <p class="text-slate-600 text-sm leading-relaxed">
-                    ניתוח תופעת הרדיקליזם האיסלאמי באמצעות כלים מ<span class="font-bold text-brand-700">מדעי החברה</span>.
-                </p>
+                <h2 class="text-xl font-bold text-slate-800 mb-1">תוכנית הסמינריון — 13 מפגשים</h2>
+                <p class="text-slate-500 text-sm">בחר מפגש לצפייה בפרטים ולהפעלת סימולטור התרחישים</p>
             </div>
-            <div class="flex flex-col md:flex-row h-[700px]">
-                <!-- Lesson List (Sidebar) -->
-                <div class="md:w-1/3 border-l border-slate-200 overflow-y-auto custom-scrollbar bg-white" id="lesson-list"></div>
-                <!-- Lesson Detail View -->
-                <div class="md:w-2/3 p-6 overflow-y-auto bg-white flex flex-col" id="lesson-detail">
-                    <div class="flex h-full items-center justify-center text-slate-400">
-                        <p>בחר שיעור מהרשימה כדי לצפות בפרטים...</p>
+            <div class="flex flex-col md:flex-row h-[720px]">
+                <div class="md:w-2/5 border-l border-slate-200 overflow-y-auto custom-scrollbar bg-white" id="lesson-list"></div>
+                <div class="md:w-3/5 p-6 overflow-y-auto bg-white flex flex-col" id="lesson-detail">
+                    <div class="flex h-full items-center justify-center text-center">
+                        <div class="text-slate-400">
+                            <div class="text-4xl mb-3">←</div>
+                            <p class="text-sm">בחר מפגש מהרשימה<br>כדי לצפות בפרטים ולהפעיל את הסימולטור</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Left Column (Analytics & AI Features) -->
-        <section class="lg:w-1/3 flex flex-col gap-6">
+        <!-- AI Simulator Panel (taller, full-height) -->
+        <section class="lg:w-2/5 flex flex-col bg-gradient-to-b from-brand-900 to-slate-900 rounded-xl shadow-lg text-white overflow-hidden">
 
-            <!-- AI Box -->
-            <div class="bg-gradient-to-br from-brand-700 to-brand-900 p-6 rounded-xl shadow-lg text-white">
-                <h3 class="text-lg font-bold mb-3 flex items-center">
-                    <span class="mr-2">✨</span> מרכז למידה חכם (AI)
+            <!-- Panel Header -->
+            <div class="p-5 border-b border-white/10">
+                <h3 class="text-lg font-bold flex items-center gap-2">
+                    <span>✨</span> סימולטור תרחישים (AI)
                 </h3>
-                <p class="text-xs text-brand-100 mb-4 leading-relaxed">
-                    השתמש ב-AI כדי להעמיק בחומר הלימוד.
-                </p>
-                <div id="ai-controls" class="space-y-3">
-                    <button onclick="generateScenario()" class="w-full bg-white/20 hover:bg-white/30 text-white font-medium py-2 px-4 rounded-lg border border-white/30 transition-all text-sm flex items-center justify-center">
-                        ✨ צור סימולציה לשיעור זה
-                    </button>
-                    <div class="relative">
-                        <input id="ai-question" type="text" placeholder="שאל שאלה על הנושא..." class="w-full bg-white/10 border border-white/30 rounded-lg py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 text-white placeholder-white/50">
-                        <button onclick="askAi()" class="absolute left-2 top-1/2 -translate-y-1/2 text-white/70 hover:text-white">
-                            <span class="text-xl">↵</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- AI Output Area -->
-                <div id="ai-response-container" class="mt-4 hidden">
-                    <div class="bg-black/20 rounded-lg p-3 text-sm max-h-64 overflow-y-auto custom-scrollbar border border-white/10" id="ai-response"></div>
-                    <button onclick="closeAiResponse()" class="mt-2 text-[10px] text-white/50 hover:text-white uppercase tracking-wider">סגור חלונית</button>
-                </div>
-                <div id="ai-loading" class="mt-4 hidden flex justify-center">
-                    <div class="spinner border-white/20"></div>
+                <p class="text-xs text-brand-200 mt-1">בחר מפגש ולחץ "צור תרחיש" לקבלת דילמה מבצעית מבוססת מחקר</p>
+            </div>
+
+            <!-- Controls -->
+            <div class="p-5 border-b border-white/10 space-y-3">
+                <button onclick="generateScenario()" class="w-full bg-white/15 hover:bg-white/25 text-white font-semibold py-2.5 px-4 rounded-lg border border-white/25 transition-all text-sm">
+                    ✨ צור תרחיש לשיעור הנבחר
+                </button>
+                <div class="relative">
+                    <input id="ai-question" type="text" placeholder="שאל שאלה על הנושא..." class="w-full bg-white/10 border border-white/25 rounded-lg py-2 px-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-400 text-white placeholder-white/40">
+                    <button onclick="askAi()" class="absolute left-2 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-lg">↵</button>
                 </div>
             </div>
 
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                <h3 class="text-lg font-bold text-slate-800 mb-2">מיקוד דיסציפלינרי</h3>
-                <div class="chart-container">
-                    <canvas id="perspectiveChart"></canvas>
+            <!-- Loading -->
+            <div id="ai-loading" class="hidden p-5 flex justify-center items-center gap-2 text-sm text-brand-200">
+                <div class="spinner"></div>
+                <span>מייצר תרחיש...</span>
+            </div>
+
+            <!-- Scenario Output (structured) -->
+            <div id="scenario-container" class="hidden flex-grow overflow-y-auto custom-scrollbar p-5 space-y-4">
+                <div class="flex justify-between items-start">
+                    <h4 id="sc-title" class="font-bold text-base leading-tight"></h4>
+                    <button onclick="closeScenario()" class="text-white/40 hover:text-white text-xs shrink-0 mr-2">✕ סגור</button>
+                </div>
+                <div class="bg-white/10 rounded-lg p-3 space-y-1">
+                    <p class="text-[10px] uppercase tracking-wider text-white/50">מצב מבצעי</p>
+                    <p id="sc-situation" class="text-xs leading-relaxed"></p>
+                </div>
+                <div class="bg-brand-700/40 rounded-lg p-3 space-y-1 border border-brand-500/30">
+                    <p class="text-[10px] uppercase tracking-wider text-brand-300">🎓 קשר תיאורטי</p>
+                    <p id="sc-theory" class="text-xs leading-relaxed"></p>
+                </div>
+                <div class="bg-red-900/40 rounded-lg p-3 space-y-1 border border-red-500/30">
+                    <p class="text-[10px] uppercase tracking-wider text-red-300">⚡ דילמה פיקודית</p>
+                    <p id="sc-dilemma" class="text-xs font-medium leading-relaxed"></p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-[10px] uppercase tracking-wider text-white/50">שאלות לניתוח</p>
+                    <ol id="sc-questions" class="text-xs space-y-1.5 list-decimal list-inside"></ol>
                 </div>
             </div>
 
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
-                <h3 class="text-lg font-bold text-slate-800 mb-2">מדד תיאוריה מול יישום</h3>
-                <div class="chart-container">
-                    <canvas id="applicationChart"></canvas>
+            <!-- Free-text Q&A Output -->
+            <div id="qa-container" class="hidden flex-grow overflow-y-auto custom-scrollbar p-5">
+                <div class="flex justify-between items-start mb-2">
+                    <p class="text-[10px] uppercase tracking-wider text-white/50">תשובת ה-AI</p>
+                    <button onclick="closeQa()" class="text-white/40 hover:text-white text-xs">✕</button>
                 </div>
+                <p id="qa-response" class="text-xs leading-relaxed"></p>
+            </div>
+
+            <!-- Idle state -->
+            <div id="ai-idle" class="flex-grow flex items-center justify-center p-6 text-center">
+                <p class="text-white/30 text-sm">בחר מפגש מהרשימה<br>ולחץ "צור תרחיש"</p>
             </div>
         </section>
     </main>
@@ -329,91 +332,133 @@
             }
         ];
 
-        let activeLessonId = null;
-        const lessonListEl = document.getElementById('lesson-list');
-        const lessonDetailEl = document.getElementById('lesson-detail');
-        const aiResponseEl = document.getElementById('ai-response');
-        const aiResponseContainer = document.getElementById('ai-response-container');
-        const aiLoadingEl = document.getElementById('ai-loading');
+        // ── Fallback scenarios (one per lesson, used when no API key is set) ──────
+        const fallbackScenarios = {
+            1: { scenario_title: "הפרדה בין דת לאידיאולוגיה", situation: "כוח סיור עצר חשוד בכפר בגדה המערבית. החשוד נושא ספרי תפילה ועל קירות ביתו תלויות תמונות דתיות. הוא מתפלל חמש פעמים ביום ואינו שותף בפעילות מבצעית ידועה.", social_science_link: "סיון (1986) מבחין בין פונדמנטליזם (חזרה לעקרונות הדת) לרדיקליזם פוליטי. החזקת ספרי תפילה אינה מאפיין רדיקל.", dilemma: "האם להחזיק את החשוד לחקירה נוספת על בסיס חשיבה דתית בלבד, או לשחררו ולהמשיך במעקב?", analysis_questions: ["מהם האינדיקטורים שמבדילים פונדמנטליזם דתי מגיוס לארגון אלים לפי סיון?", "כיצד שימוש לא מדויק בפרופיל דתי עלול לחזק את הרדיקליזציה?"] },
+            2: { scenario_title: "מסמכי שלל אידיאולוגיים", situation: "בפשיטה על בית בג'נין נמצאו קבצים דיגיטליים הכוללים מאמרים מ'ציוני דרך' של קוטב, תוכניות עתידיות ורשימת שמות. המ\"כ שואל: האם מדובר בתא למידה, בגיוס פעיל, או בתכנון מבצע?", social_science_link: "קפל (1984) מראה כי תנועות איסלאמיסטיות עוברות שלבים: לימוד אידיאולוגי → גיוס → פעולה. עומק חדירת טקסטים של קוטב מצביע על שלב הארגון.", dilemma: "האם לפעול מיידית נגד כל הרשימה ולחשוף את הרשת, או להמתין ולאסוף מידע על יעד בכיר יותר?", analysis_questions: ["כיצד ניתן לאמוד את 'שלב' הארגון מתוך חומרים אידיאולוגיים שנתפסו?", "מה הסיכון בהמתנה לפעולה מבצעית לצורך איסוף מידע נוסף?"] },
+            3: { scenario_title: "המגייס הספק", situation: "סוכן מדווח על בחור בן 19 שעבר רדיקליזציה מהירה תוך שלושה חודשים לאחר מות אחיו. הוא שוהה עם תא, אך שלח סרטון לאמו שבו מתנצל. פסיכולוג שטח מעריך שייתכן שמתחרט.", social_science_link: "מרארי (2010) מצא שמרבית מבצעי פיגועים עוברים 'נקודת אל-חזור' קצרה לפני הביצוע. ספגמן מזהה טריגרים אישיים כמאיץ, לא כגורם מספיק בפני עצמו.", dilemma: "האם לפעול מיידית ולעצור — וכך לחשוף את הסוכן — או לנסות יצירת קשר ישיר כדי לשכנע את הבחור לעזוב?", analysis_questions: ["אילו מדדים פסיכולוגיים מבדילים חרטה אמיתית מ'ספק' שאינו משפיע על ביצוע?", "כיצד אבל משפיע על תהליך הרדיקליזציה לפי הספרות?"] },
+            4: { scenario_title: "הסוחר ובעל בית הקפה", situation: "מודיעין מצביע על סוחר שמועבר דרכו כ-3,000 דולר לחודש לארגון. הוא אב לחמישה ילדים שפשט רגל לאחר סגר כלכלי. בית קפה של קרוב משפחה הוא נקודת ההעברה.", social_science_link: "ברמן (2009) מסביר כיצד ארגוני טרור מציעים 'ביטוח הדדי' כלכלי שיוצר תלות לא אידיאולוגית. קרוגר (2007): מניע כלכלי אינו שולל אלימות.", dilemma: "האם לעצור את הסוחר ולנתק את זרם הכסף מיידית, או לנצלו כ'צינור' מבוקר תוך הבנת הרשת?", analysis_questions: ["כיצד ניתן לנצל פגיעות כלכלית של פעיל לגייסו כמקור מודיעין?", "מה הסיכון המוסרי והאסטרטגי בהשארת ערוץ מימון פעיל בשליטה?"] },
+            5: { scenario_title: "ראש הרשת או הצומת", situation: "מודיעין זיהה את 'אבו ח'אלד' — מתאם בכיר ברשת תאים מבוזרת בצפון השומרון. זוהה גם צומת תקשורת קריטי — חנות אביזרי טלפונים. פגיעה בשניהם בו-זמנית — לא אפשרית הלילה.", social_science_link: "ארקווילה ורונפלד (2001): בארגון רשתי, פגיעה בראש פחות קריטית מפגיעה בצמתים. קרנשו: 'ירידת מנהיג' עלולה לאיץ ביזור ולחזק עמידות.", dilemma: "האם לפגוע ב'אבו ח'אלד' (מנהיג, מחיר הסברתי גבוה) או בחנות האביזרים (תשתית, השפעה ארוכת טווח)?", analysis_questions: ["כיצד מבנה ארגון משנה את העדיפות בין פגיעה בראש לפגיעה בתשתית?", "מה התנאים שבהם פגיעה במנהיג דווקא מחזקת את הארגון?"] },
+            6: { scenario_title: "המשרד החינוכי בצור", situation: "בפעילות בצור, כוח מסיר נשק ממתחם עם סימני חזבאללה. בבניין הסמוך פועל משרד חינוכי של עמותה המנהלת בית ספר ל-400 ילדים. מודיעין מעיד שהמשרד משמש גם לתיאום לוגיסטי.", social_science_link: "נורטון (2007) מסביר את 'מודל המדינה המקבילה': חזבאללה בונה לגיטימציה דרך שירותים חברתיים. שפירא: אין הפרדה ברורה בין הזרוע האזרחית לצבאית.", dilemma: "האם להיכנס ולנטרל את המשרד — תוך פגיעה בפעילות החינוכית — או לבסס מעקב ולמנוע פעילות מרחוק?", analysis_questions: ["כיצד ניתן להבחין בין תשתית שירותים לגיטימית לתשתית כפולת שימוש?", "מה ההשלכה ההסברתית של פגיעה בנכסי 'שירותים' של חזבאללה?"] },
+            7: { scenario_title: "הקלינאית ורשת החינוך", situation: "מודיעין מאתר קלינאית בגדה המערבית שמנהלת מרפאה לקהילה — ובמקביל מגייסת נשים לפעילות חמאס. היא ידועה בקהילה כדמות מרכזית ומוכבדת.", social_science_link: "ויקטורוביץ' (2004): 'דעווה' (פעילות חברתית-דתית) היא שלב גיוס — בונה אמון ותלות. תנועות חברתיות זקוקות ל'מסגרות הזדמנות פוליטית'.", dilemma: "מעצר הקלינאית יסגור את המרפאה ויפגע בבריאות הקהילה. אי-מעצר מאפשר גיוס נמשך. כיצד תפעל?", analysis_questions: ["כיצד 'הפרדה' בין זרוע השירותים לצבאית משפיעה על אסטרטגיית הסיכול?", "מה תפקיד הנשים כסוכנות גיוס לפי תיאוריית התנועות החברתיות?"] },
+            8: { scenario_title: "הלוחם הזר", situation: "נלכד לוחם צ'צ'ני שהצטרף לתא מקומי. הוא אינו דובר ערבית שוטפת ואין לו קשרים לאזור. עמדותיו החריפו לאחר צפייה בסרטוני ISIS ועלייה לרשתות טלגרם.", social_science_link: "רואה (2004) מסביר 'האסלאם הגלובלי': דה-לוקליזציה של הג'יהאד — זהות אידיאולוגית מחליפה את הגיאוגרפיה. מוטיבציה גלובלית פחות מותנית בתנאים מקומיים.", dilemma: "כיצד לחקור לוחם שמוטיבציה שלו גלובלית לא מקומית? האם מידע שמסר על הרשת המקומית ניתן לאמות?", analysis_questions: ["מה ההבדל בין לוחם זר עם מוטיבציה גלובלית ללוחם מקומי מבחינת פוטנציאל המידע?", "כיצד גלובליזציה של הג'יהאד משפיעה על יעילות הסיכול הממוקד?"] },
+            9: { scenario_title: "כיכר המרכז", situation: "כוח נכנס לשכונה שהייתה בשליטת דאעש. תושבים מספרים על הוצאות להורג פומביות בכיכר. מנהיג שכונה שיתף פעולה עם דאעש — אך גם הגן על משפחות.", social_science_link: "קלייבס (2006) מסביר 'לוגיקת האלימות': דאעש השתמש באלימות פרפורמטיבית לייצור סדר ושליטה — לא כעונש. שיתוף פעולה מתרחש לעיתים מפחד, לא מאמונה.", dilemma: "כיצד להתייחס למנהיג השכונה? הפללה מלאה תפגע בשיתוף פעולה עתידי. פטור יפגע בלגיטימיות ובאמון התושבים.", analysis_questions: ["כיצד לוגיקת האלימות של קלייבס מבחינה בין שיתוף פעולה כפוי לאמונה אידיאולוגית?", "מה גישת COIN ביחס לאוכלוסייה ששיתפה פעולה עם כוח אלים?"] },
+            10: { scenario_title: "48 שעות ברשת", situation: "ניתוח סייבר זיהה קבוצת טלגרם של 1,200 חברים המתאמת הפגנה 'ספונטנית' — שעלולה לשמש כיסוי לתקיפה. הקבוצה הוקמה לפני 48 שעות בלבד.", social_science_link: "וויימן (2006): הרשת מאפשרת גיוס מהיר ללא מבנה היררכי. קונווי (2017): פלטפורמות מסוימות מאיצות רדיקליזציה דרך 'אפקט הד-תהודה'.", dilemma: "האם לסגור את הקבוצה — וסיכון לפיצול ל-10 קבוצות קטנות שקשות למעקב — או להשאירה פתוחה ולבצע מעקב בזמן אמת?", analysis_questions: ["מה היתרונות והחסרונות של סגירת פלטפורמה לעומת מעקב פעיל?", "כיצד 'גיוס מהיר' ברשת מאתגר מודלי מודיעין מסורתיים?"] },
+            11: { scenario_title: "הצלפים בעיריית ג'נין", situation: "מבנה ציבורי שימש ל-72 שעות כעמדת ירי. כוח מתכנן לפגוע בו. נוכחות אזרחית מאומתת: ארכיון עירוני עם מסמכים היסטוריים. פגיעה דיוקנית תחסל את הצלפים אך תשמיד את הארכיון.", social_science_link: "קילקולן (2009) מציג את 'עקרון המינימום כוח': ב-COIN, כל פגיעה אזרחית יוצרת עלויות הסברתיות שמאיצות גיוס יריב. גנור: דילמה בין יעילות טקטית להשלכות אסטרטגיות.", dilemma: "האם להורות על פגיעה מיידית — תוך נזק לרכוש ציבורי ותגובת דעת קהל — או לנסות חלופה הגוזלת זמן?", analysis_questions: ["כיצד ניתן למדוד את 'עלות ההסברה' של פגיעה בתשתית אזרחית?", "מה אמות המידה של COIN לבחירה בין יעד טקטי לנזק אזרחי?"] },
+            12: { scenario_title: "האסיר המשוחח", situation: "אסיר בכיר ממוחזק 14 חודשים מביע רצון לשתף פעולה. הוא מוכן לספק שמות תמורת הקלת תנאי מאסר לאחיו. פסיכולוג שדה מעריך שהוא עייף ממאסר, לא בהכרח פרש ממעגל הרדיקליזם.", social_science_link: "הורגן (2009) מבחין בין 'ניתוק' (עזיבת הארגון) ל'דה-רדיקליזציה' (שינוי עמדות). אשור: ניתוק חיצוני אינו מעיד על שינוי פנימי.", dilemma: "האם לקבל את הצעת שיתוף הפעולה — שעלולה להתגלות כמידע מוטעה — או לדחות ולחפש מינוף אחר?", analysis_questions: ["כיצד ניתן להבחין בין שיתוף פעולה אינסטרומנטלי לשיתוף פעולה שנובע מדה-רדיקליזציה?", "מה פרוטוקול אימות מידע שמקורו בפעיל שביקש השתחרור?"] },
+            13: { scenario_title: "תרחיש שילוב: 'מבצע ערב'", situation: "48 שעות לפני מבצע: מודיעין מצביע על תא מבוזר (מפגש 5), הנהגה אידיאולוגית (מפגש 2), גיוס דיגיטלי מהיר (מפגש 10) ומימון דרך סוחרים מקומיים (מפגש 4). תאי דעווה מספקים כיסוי (מפגש 7).", social_science_link: "כל כלי הניתוח של הסמינריון נדרשים בו-זמנית: סוציולוגיה ארגונית, פסיכולוגיה, כלכלה פוליטית ותיאוריית תנועות חברתיות.", dilemma: "קצין הפיקוד חייב לדרג: (א) פגיעה במנהיג האידיאולוגי, (ב) ניתוק מימון, (ג) סגירת הרשת הדיגיטלית, (ד) פירוק תשתית הדעווה. מה הסדר הנכון ולמה?", analysis_questions: ["כיצד כל אחד מהכלים האקדמיים שנלמדו תורם להחלטה המבצעית הזו?", "מה הגורם שהייתם מזהים כ'נקודת הכישלון הקריטית' של המבצע?"] }
+        };
 
-        async function fetchGemini(prompt, systemInstruction = "") {
-            if (!apiKey) {
-                throw new Error("לא הוגדר מפתח API. יש להוסיף מפתח Gemini לקובץ syllabus.html.");
-            }
+        let activeLessonId = null;
+        const lessonListEl  = document.getElementById('lesson-list');
+        const lessonDetailEl = document.getElementById('lesson-detail');
+        const aiLoadingEl   = document.getElementById('ai-loading');
+        const scenarioEl    = document.getElementById('scenario-container');
+        const qaEl          = document.getElementById('qa-container');
+        const aiIdleEl      = document.getElementById('ai-idle');
+
+        // ── API ──────────────────────────────────────────────────────────────────
+        async function fetchGemini(prompt, systemInstruction, wantJson = false) {
+            if (!apiKey) throw new Error('NO_KEY');
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
             const payload = {
                 contents: [{ parts: [{ text: prompt }] }],
-                systemInstruction: systemInstruction ? { parts: [{ text: systemInstruction }] } : undefined
+                systemInstruction: systemInstruction ? { parts: [{ text: systemInstruction }] } : undefined,
+                generationConfig: wantJson ? { response_mime_type: 'application/json' } : {}
             };
             let delay = 1000;
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 4; i++) {
                 try {
-                    const response = await fetch(url, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    if (response.ok) {
-                        const data = await response.json();
-                        return data.candidates?.[0]?.content?.parts?.[0]?.text || "לא התקבלה תשובה.";
+                    const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                    if (res.ok) {
+                        const data = await res.json();
+                        return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
                     }
-                } catch (e) { /* silent retry */ }
-                await new Promise(resolve => setTimeout(resolve, delay));
+                } catch (e) { /* retry */ }
+                await new Promise(r => setTimeout(r, delay));
                 delay *= 2;
             }
-            throw new Error("נכשלו כל הניסיונות להתחבר לשרת ה-AI.");
+            throw new Error('API_FAIL');
         }
 
-        async function askAi() {
-            const question = document.getElementById('ai-question').value;
-            if (!question) return;
-            showAiLoading(true);
-            const currentLesson = lessonsData.find(l => l.id === activeLessonId) || { title: "כללי" };
-            const systemPrompt = "אתה עוזר מחקר אקדמי בקורס 'רדיקליזם איסלאמי במזרח התיכון'. ענה בעברית רהוטה ומקצועית. התמקד בפרספקטיבה של מדעי החברה.";
-            const userPrompt = `בהקשר לשיעור: ${currentLesson.title}. שאלה: ${question}`;
-            try {
-                const result = await fetchGemini(userPrompt, systemPrompt);
-                displayAiResponse(result);
-            } catch (err) {
-                displayAiResponse("שגיאה: " + err.message);
-            } finally {
-                showAiLoading(false);
-            }
-        }
-
+        // ── Scenario generator ───────────────────────────────────────────────────
         async function generateScenario() {
-            if (!activeLessonId) {
-                displayAiResponse("נא לבחור שיעור קודם כדי לייצר סימולציה רלוונטית.");
-                return;
-            }
-            showAiLoading(true);
+            if (!activeLessonId) { showIdle('בחר מפגש תחילה'); return; }
             const lesson = lessonsData.find(l => l.id === activeLessonId);
-            const systemPrompt = "אתה מרצה אקדמי. צור תרחיש קצר (עד 150 מילים) המבוסס על נושא השיעור המציב דילמה אנליטית הדורשת הבנה של מדעי החברה.";
-            const userPrompt = `צור סימולציה לשיעור: ${lesson.title} (${lesson.description}).`;
+            showLoading(true);
             try {
-                const result = await fetchGemini(userPrompt, systemPrompt);
-                displayAiResponse(`**תרחיש מוצע:**\n\n${result}`);
+                const sysPrompt = `אתה מדריך בכיר במכללה לפיקוד טקטי (מלט"ק) של צה"ל ומדען חברה מומחה למזרח התיכון.
+החזר תמיד JSON בלבד, בפורמט הבא ללא כל טקסט נוסף:
+{"scenario_title":"...","situation":"...","social_science_link":"...","dilemma":"...","analysis_questions":["...","..."]}`;
+                const userPrompt = `lesson_id: ${lesson.id}
+topic: ${lesson.title}
+academic_context: ${lesson.readings.join('; ')}
+tactical_goal: ${lesson.tacticalImplication}`;
+                const raw = await fetchGemini(userPrompt, sysPrompt, true);
+                const parsed = JSON.parse(raw);
+                displayScenario(parsed);
             } catch (err) {
-                displayAiResponse("שגיאה: " + err.message);
+                // Fallback to pre-written scenario
+                displayScenario(fallbackScenarios[activeLessonId]);
             } finally {
-                showAiLoading(false);
+                showLoading(false);
             }
         }
 
-        function displayAiResponse(text) {
-            aiResponseEl.innerText = text;
-            aiResponseContainer.classList.remove('hidden');
+        function displayScenario(s) {
+            document.getElementById('sc-title').textContent    = s.scenario_title;
+            document.getElementById('sc-situation').textContent = s.situation;
+            document.getElementById('sc-theory').textContent   = s.social_science_link;
+            document.getElementById('sc-dilemma').textContent  = s.dilemma;
+            const ol = document.getElementById('sc-questions');
+            ol.innerHTML = s.analysis_questions.map(q => `<li class="leading-relaxed">${q}</li>`).join('');
+            scenarioEl.classList.remove('hidden');
+            qaEl.classList.add('hidden');
+            aiIdleEl.classList.add('hidden');
         }
-        function closeAiResponse() {
-            aiResponseContainer.classList.add('hidden');
+
+        function closeScenario() {
+            scenarioEl.classList.add('hidden');
+            aiIdleEl.classList.remove('hidden');
         }
-        function showAiLoading(isLoading) {
-            if (isLoading) {
-                aiLoadingEl.classList.remove('hidden');
-                aiResponseContainer.classList.add('hidden');
-            } else {
-                aiLoadingEl.classList.add('hidden');
+
+        // ── Free-text Q&A ────────────────────────────────────────────────────────
+        async function askAi() {
+            const question = document.getElementById('ai-question').value.trim();
+            if (!question) return;
+            showLoading(true);
+            const lesson = lessonsData.find(l => l.id === activeLessonId) || { title: 'כללי' };
+            const sys = "אתה עוזר מחקר אקדמי בקורס 'רדיקליזם איסלאמי במזרח התיכון'. ענה בעברית רהוטה ומקצועית. התמקד בפרספקטיבה של מדעי החברה. היה תמציתי.";
+            const prompt = `בהקשר לשיעור: ${lesson.title}. שאלה: ${question}`;
+            try {
+                const result = !apiKey ? 'יש להוסיף מפתח Gemini API לקובץ syllabus.html כדי להפעיל את התכונה הזו.' : await fetchGemini(prompt, sys);
+                document.getElementById('qa-response').textContent = result;
+                qaEl.classList.remove('hidden');
+                scenarioEl.classList.add('hidden');
+                aiIdleEl.classList.add('hidden');
+                document.getElementById('ai-question').value = '';
+            } catch (err) {
+                document.getElementById('qa-response').textContent = 'שגיאה בחיבור ל-API. נסה שוב.';
+                qaEl.classList.remove('hidden');
+            } finally {
+                showLoading(false);
             }
+        }
+
+        function closeQa() {
+            qaEl.classList.add('hidden');
+            aiIdleEl.classList.remove('hidden');
+        }
+
+        // ── Helpers ──────────────────────────────────────────────────────────────
+        function showLoading(on) {
+            aiLoadingEl.classList.toggle('hidden', !on);
+            if (on) { scenarioEl.classList.add('hidden'); qaEl.classList.add('hidden'); aiIdleEl.classList.add('hidden'); }
+        }
+
+        function showIdle(msg) {
+            aiIdleEl.querySelector('p').innerHTML = msg;
+            aiIdleEl.classList.remove('hidden');
         }
 
         function renderLessonList() {
@@ -465,50 +510,12 @@
             activeLessonId = id;
             renderLessonList();
             renderLessonDetail();
-            closeAiResponse();
-        }
-
-        function initCharts() {
-            Chart.defaults.font.family = "Segoe UI";
-            const ctxRadar = document.getElementById('perspectiveChart').getContext('2d');
-            new Chart(ctxRadar, {
-                type: 'radar',
-                data: {
-                    labels: ['סוציולוגיה', 'מדע המדינה', 'פסיכולוגיה', 'כלכלה', 'תקשורת'],
-                    datasets: [{
-                        label: 'מיקוד קורס',
-                        data: [4, 3, 2, 1, 1],
-                        backgroundColor: 'rgba(14, 165, 233, 0.2)',
-                        borderColor: '#0ea5e9',
-                        pointBackgroundColor: '#0369a1'
-                    }]
-                },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
-            });
-            const ctxBar = document.getElementById('applicationChart').getContext('2d');
-            new Chart(ctxBar, {
-                type: 'bar',
-                data: {
-                    labels: lessonsData.map(l => l.id),
-                    datasets: [
-                        { label: 'תיאוריה', data: lessonsData.map(l => l.theoretical), backgroundColor: '#0ea5e9' },
-                        { label: 'יישום', data: lessonsData.map(l => l.tactical), backgroundColor: '#84cc16' }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        x: { stacked: true },
-                        y: { stacked: true, max: 100 }
-                    }
-                }
-            });
+            closeScenario();
+            closeQa();
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             renderLessonList();
-            initCharts();
         });
     </script>
 </body>
