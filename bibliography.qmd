@@ -1,0 +1,133 @@
+---
+title: "רשימה ביבליוגרפית"
+subtitle: "רדיקליזם איסלאמי במזרח התיכון המודרני"
+page-layout: full
+title-block-banner: true
+---
+
+::: {.rtl}
+
+להלן ריכוז כלל חומרי הקריאה לסמינריון, מסודרים לפי מפגשים.
+
+> **הערה לסטודנטים:** הגישה למקורות ב-Google Books עשויה להיות מוגבלת לתצוגה חלקית. לקריאה מלאה של המאמרים והספרים, יש להשתמש ב[פורטל הספריות של אוניברסיטת חיפה](https://lib.haifa.ac.il) ולהזדהות עם קוד משתמש וסיסמה.
+
+---
+
+## מפגש 1: סוציולוגיה של הדת ומשבר המודרניות
+
+סיון, ע' (1986). *קנאי האסלאם*. תל אביב: עם עובד.
+[[קישור למידע בספרייה הלאומית](#)]{.text-muted}
+
+Berger, P. L. (1967). *The Sacred Canopy: Elements of a Sociological Theory of Religion*. Anchor Books.
+[[קישור לקריאה ב-Internet Archive](#)]{.text-muted}
+
+---
+
+## מפגש 2: מדע המדינה — האידיאולוגיה של המהפכה
+
+קוטב, ס' (1964). *ציוני דרך* (Ma'alim fi al-Tariq).
+[[קישור לטקסט המלא באנגלית (PDF)](#)]{.text-muted}
+
+Kepel, G. (1984). *The Prophet and Pharaoh: Muslim Extremism in Egypt*. Al Saqi Books.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+---
+
+## מפגש 3: פסיכולוגיה חברתית של הרדיקליזציה
+
+Merari, A. (2010). *Driven to Death: Psychological and Social Aspects of Suicide Terrorism*. Oxford University Press.
+[[קישור למאמר ב-ResearchGate](#)]{.text-muted}
+
+Sageman, M. (2004). *Understanding Terror Networks*. University of Pennsylvania Press.
+
+---
+
+## מפגש 4: כלכלה פוליטית ומשאבי טרור
+
+Krueger, A. B. (2007). *What Makes a Terrorist: Economics and the Roots of Terrorism*. Princeton University Press.
+[[קישור לתצוגה מקדימה ב-Google Books](#)]{.text-muted}
+
+Berman, E. (2009). *Radical, Religious, and Violent: The New Economics of Terrorism*. MIT Press.
+[[קישור לטקסט המלא (PDF)](#)]{.text-muted}
+
+---
+
+## מפגש 5: סוציולוגיה ארגונית — היררכיה מול רשת
+
+Arquilla, J., & Ronfeldt, D. (2001). *Networks and Netwars: The Future of Terror, Crime, and Militancy*. RAND Corporation.
+[[קישור להורדה חופשית מאתר RAND](#)]{.text-muted}
+
+Crenshaw, M. (1987). Theories of Terrorism: Instrumental and Organizational Approaches. *The Journal of Strategic Studies*.
+[[קישור למאמר ב-Taylor & Francis](#)]{.text-muted}
+
+---
+
+## מפגש 6: חזבאללה — מדינה, עדה וצבא
+
+Norton, A. R. (2007). *Hezbollah: A Short History*. Princeton University Press.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+שפירא, ש' (2000). *חזבאללה בין איראן ללבנון*. תל אביב: הקיבוץ המאוחד.
+[[קישור למידע קטלוגי — סימניה](#)]{.text-muted}
+
+---
+
+## מפגש 7: חמאס ותיאוריית התנועות החברתיות (SMT)
+
+Wiktorowicz, Q. (Ed.). (2004). *Islamic Activism: A Social Movement Theory Approach*. Indiana University Press.
+[[קישור לתצוגה מקדימה ב-Google Books](#)]{.text-muted}
+
+שטיינברג, מ' (2008). *עומדים לגורלם: היצירה הלאומית הפלסטינית*. תל אביב: פרובו.
+[[קישור למידע בספריית אוניברסיטת חיפה](#)]{.text-muted}
+
+---
+
+## מפגש 8: אל-קאעידה והגלובליזציה של הג׳יהאד
+
+Roy, O. (2004). *Globalized Islam: The Search for a New Ummah*. Columbia University Press.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+Devji, F. (2005). *Landscapes of the Jihad: Militancy, Morality, Modernity*. Cornell University Press.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+---
+
+## מפגש 9: דאעש — הלוגיקה של האלימות
+
+Kalyvas, S. N. (2006). *The Logic of Violence in Civil War*. Cambridge University Press.
+[[קישור לפרקי הספר ב-Cambridge Core](#)]{.text-muted}
+
+Tripp, C. (2013). *The Power and the People: Paths of Resistance in the Middle East*. Cambridge University Press.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+---
+
+## מפגש 10: רדיקליזם דיגיטלי וזאבים בודדים
+
+Weimann, G. (2006). *Terror on the Internet: The New Arena, the New Challenges*. USIP Press.
+[[קישור למידע באתר USIP](#)]{.text-muted}
+
+Conway, M. (2017). Determining the Role of the Internet in Violent Extremism and Terrorism. *Studies in Conflict & Terrorism*.
+[[קישור למאמר ב-ResearchGate](#)]{.text-muted}
+
+---
+
+## מפגש 11: אסטרטגיות סיכול (COIN) ודילמות המדינה
+
+Kilcullen, D. (2009). *The Accidental Guerrilla*. Oxford University Press.
+[[קישור לסקירה ב-Military Review (PDF)](#)]{.text-muted}
+
+Ganor, B. (2005). *The Counter-Terrorism Puzzle*. Transaction Publishers.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+---
+
+## מפגש 12: דה-רדיקליזציה — היום שאחרי
+
+Horgan, J. (2009). *Walking Away from Terrorism*. Routledge.
+[[קישור לעיון ב-Google Books](#)]{.text-muted}
+
+Ashour, O. (2009). *The De-Radicalization of Jihadists*. Routledge.
+[[קישור למחקר מקוצר ב-Brookings (PDF)](#)]{.text-muted}
+
+:::

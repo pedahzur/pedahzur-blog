@@ -10,6 +10,8 @@ website:
     left:
       - text: "סילבוס | Syllabus"
         href: syllabus.html
+      - text: "ביבליוגרפיה | Bibliography"
+        href: bibliography.qmd
     right:
       - icon: github
         href: https://github.com/pedahzur
