@@ -1,0 +1,5 @@
+# downloaded / generated data (keep the fixtures, ignore everything else)
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
